@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-slate-950 text-slate-100 antialiased;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at top left, rgba(36, 127, 255, 0.26), transparent 30rem),
+    radial-gradient(circle at top right, rgba(14, 165, 233, 0.15), transparent 26rem),
+    radial-gradient(circle at bottom, rgba(59, 130, 246, 0.12), transparent 28rem),
+    linear-gradient(180deg, #020617 0%, #0f172a 52%, #020617 100%);
+  z-index: -2;
+}
+
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: linear-gradient(to bottom, black, transparent 72%);
+  z-index: -1;
+}
+
+.container-page {
+  @apply mx-auto w-full max-w-7xl px-5 sm:px-6 lg:px-8;
+}
+
+.section-padding {
+  @apply py-20 sm:py-24;
+}
+
+.card-glass {
+  @apply rounded-3xl border border-white/10 bg-white/[0.06] shadow-soft backdrop-blur-xl;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+::selection {
+  @apply bg-brand-400 text-white;
+}

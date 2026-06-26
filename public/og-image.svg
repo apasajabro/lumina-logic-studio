@@ -1,0 +1,44 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#020617"/>
+  <circle cx="120" cy="80" r="320" fill="#247FFF" fill-opacity="0.28"/>
+  <circle cx="1060" cy="120" r="280" fill="#0EA5E9" fill-opacity="0.18"/>
+  <circle cx="650" cy="650" r="360" fill="#2563EB" fill-opacity="0.16"/>
+
+  <g opacity="0.18">
+    <path d="M0 120H1200" stroke="white"/>
+    <path d="M0 240H1200" stroke="white"/>
+    <path d="M0 360H1200" stroke="white"/>
+    <path d="M0 480H1200" stroke="white"/>
+    <path d="M120 0V630" stroke="white"/>
+    <path d="M240 0V630" stroke="white"/>
+    <path d="M360 0V630" stroke="white"/>
+    <path d="M480 0V630" stroke="white"/>
+    <path d="M600 0V630" stroke="white"/>
+    <path d="M720 0V630" stroke="white"/>
+    <path d="M840 0V630" stroke="white"/>
+    <path d="M960 0V630" stroke="white"/>
+    <path d="M1080 0V630" stroke="white"/>
+  </g>
+
+  <rect x="90" y="88" width="1020" height="454" rx="42" fill="white" fill-opacity="0.07" stroke="white" stroke-opacity="0.14"/>
+
+  <rect x="140" y="140" width="96" height="96" rx="28" fill="#247FFF"/>
+  <path d="M169 208V168H181V197H205V208H169Z" fill="white"/>
+  <path d="M207 208V168H219V197H243V208H207Z" fill="white" opacity="0.86"/>
+
+  <text x="140" y="306" fill="#DBEAFE" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" letter-spacing="5">
+    PT LUMINA LOGIC STUDIO
+  </text>
+
+  <text x="140" y="378" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="54" font-weight="800">
+    Professional Software, Web,
+  </text>
+
+  <text x="140" y="440" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="54" font-weight="800">
+    and Digital Solutions
+  </text>
+
+  <text x="140" y="500" fill="#94A3B8" font-family="Arial, Helvetica, sans-serif" font-size="26">
+    Software • Website • Digital Product Support
+  </text>
+</svg>
