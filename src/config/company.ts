@@ -19,7 +19,7 @@ export const company = {
   whatsapp: '',
   address: 'Indonesia',
   founded: '2026',
-  websiteUrl: 'https://example.com',
+  websiteUrl: 'https://luminalogictech.my.id',
   social: {
     instagram: '',
     linkedin: '',
