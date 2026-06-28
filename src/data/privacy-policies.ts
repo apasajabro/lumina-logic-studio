@@ -38,7 +38,7 @@ export const privacyPolicies: AppPrivacyPolicy[] = [
     shortDescription:
       'Privacy policy for Daily Planner, an offline daily planning app published by Lumina Logic Studio.',
     dataCollectionSummary:
-      'Daily Planner is designed to work offline. Planner data such as task title, description, due date, category, priority, completion status, created date, and updated date is stored locally on the user’s device and is not transmitted to Lumina Logic Studio or third-party servers.',
+      'Daily Planner works offline. Planner data is stored locally on the user’s device and is not transmitted to Lumina Logic Studio or third-party servers.',
     features: {
       localStorage: true,
       ads: false,
