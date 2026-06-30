@@ -56,6 +56,35 @@ export const privacyPolicies: AppPrivacyPolicy[] = [
   },
 
   {
+    slug: 'simple-habit-tracker',
+    appName: 'Simple Habit Tracker',
+    developerName: 'Lumina Logic Studio',
+    companyWebsite: 'https://luminalogictech.my.id',
+    contactEmail: 'luminalogicstudio@proton.me',
+    effectiveDate: '2026-07-01',
+    lastUpdated: '2026-07-01',
+    country: 'Indonesia',
+    shortDescription:
+      'Privacy policy for Simple Habit Tracker, an offline habit tracking app published by Lumina Logic Studio.',
+    dataCollectionSummary:
+      'Simple Habit Tracker works offline. Habit data is stored locally on the user’s device and is not transmitted to Lumina Logic Studio or third-party servers.',
+    features: {
+      localStorage: true,
+      ads: false,
+      analytics: false,
+      crashReporting: false,
+      inAppPurchases: false,
+      subscriptions: false,
+      notifications: false,
+      location: false,
+      camera: false,
+      mediaFiles: false,
+      accountSystem: false,
+      cloudSync: false
+    }
+  },
+
+  {
     slug: 'general-mobile-app-privacy-policy',
     appName: 'General Mobile Application Privacy Policy',
     developerName: 'PT Lumina Logic Studio',
