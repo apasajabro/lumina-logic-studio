@@ -16,6 +16,7 @@ const { policy } = Astro.props as { policy: Policy };
 const isDailyPlanner = policy.slug === 'daily-planner';
 const isSimpleHabitTracker = policy.slug === 'simple-habit-tracker';
 const isAssetVault = policy.slug === 'asset-vault';
+const isRecipeVault = policy.slug === 'recipe-vault';
 
 const title = `${policy.appName} — Privacy Policy`;
 const description = policy.shortDescription;
@@ -117,7 +118,39 @@ const coveredFeatures = [
             </aside>
 
             <article class="rounded-[2rem] border border-white/15 bg-white p-6 text-slate-800 shadow-soft sm:p-10">
-              {isAssetVault ? (
+              {isRecipeVault ? (
+                <div class="privacy-document">
+                  <section>
+                    <h2>Privacy Policy for Recipe Vault: Recipe Manager</h2>
+                    <p><strong>Effective Date:</strong> August 2026</p>
+                  </section>
+
+                  <section>
+                    <h2>1. Data Collection and Storage</h2>
+                    <p>Recipe Vault: Recipe Manager is designed with your privacy in mind. All your recipe data, favorites, and settings are stored strictly locally on your device. We do not collect, transmit, or store your personal data on any external servers.</p>
+                  </section>
+
+                  <section>
+                    <h2>2. Data Usage and Sharing</h2>
+                    <p>Because your data never leaves your device, we do not have access to your recipes or personal information. Consequently, we do not sell, rent, or share any of your data with third parties.</p>
+                  </section>
+
+                  <section>
+                    <h2>3. Device Permissions</h2>
+                    <p>The app may require certain device permissions (such as internet access for downloading external recipe images) solely to provide core functionalities. This happens entirely on your device and no usage telemetry is collected.</p>
+                  </section>
+
+                  <section>
+                    <h2>4. Contact Us</h2>
+                    <p>If you have any questions or concerns about this Privacy Policy, please contact us at:</p>
+                    <div class="mt-5 rounded-2xl border border-slate-200 bg-slate-50 p-5">
+                      <p><strong>Lumina Logic Studio</strong></p>
+                      <p>Email: <a href="mailto:luminalogicstudio@proton.me">luminalogicstudio@proton.me</a></p>
+                      <p>Website: <a href="https://luminalogictech.my.id/">https://luminalogictech.my.id/</a></p>
+                    </div>
+                  </section>
+                </div>
+              ) : isAssetVault ? (
                 <div class="privacy-document">
                   <section>
                     <h2>Privacy Policy for Asset Vault</h2>
