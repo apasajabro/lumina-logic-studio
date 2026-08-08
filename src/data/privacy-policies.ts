@@ -143,6 +143,35 @@ export const privacyPolicies: AppPrivacyPolicy[] = [
   },
 
   {
+    slug: 'mathiq',
+    appName: 'MathIQ',
+    developerName: 'Lumina Logic Studio',
+    companyWebsite: 'https://luminalogictech.my.id/',
+    contactEmail: 'support@luminalogic.com',
+    effectiveDate: '2026-08-01',
+    lastUpdated: '2026-08-01',
+    country: 'Indonesia',
+    shortDescription:
+      'Privacy policy for MathIQ, an offline educational game published by Lumina Logic Studio.',
+    dataCollectionSummary:
+      'MathIQ is a completely offline application. We do not collect, store, transmit, or share any personal data.',
+    features: {
+      localStorage: true,
+      ads: false,
+      analytics: false,
+      crashReporting: false,
+      inAppPurchases: false,
+      subscriptions: false,
+      notifications: false,
+      location: false,
+      camera: false,
+      mediaFiles: false,
+      accountSystem: false,
+      cloudSync: false
+    }
+  },
+
+  {
     slug: 'general-mobile-app-privacy-policy',
     appName: 'General Mobile Application Privacy Policy',
     developerName: 'PT Lumina Logic Studio',
