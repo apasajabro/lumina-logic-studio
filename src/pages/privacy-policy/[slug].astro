@@ -15,6 +15,7 @@ const { policy } = Astro.props as { policy: Policy };
 
 const isDailyPlanner = policy.slug === 'daily-planner';
 const isSimpleHabitTracker = policy.slug === 'simple-habit-tracker';
+const isAssetVault = policy.slug === 'asset-vault';
 
 const title = `${policy.appName} — Privacy Policy`;
 const description = policy.shortDescription;
@@ -116,7 +117,48 @@ const coveredFeatures = [
             </aside>
 
             <article class="rounded-[2rem] border border-white/15 bg-white p-6 text-slate-800 shadow-soft sm:p-10">
-              {isDailyPlanner ? (
+              {isAssetVault ? (
+                <div class="privacy-document">
+                  <section>
+                    <h2>Privacy Policy for Asset Vault</h2>
+                    <p><strong>Effective Date:</strong> August 9, 2026</p>
+                  </section>
+
+                  <section>
+                    <h2>1. Offline-First Architecture</h2>
+                    <p>Asset Vault is built strictly as an offline-first inventory tracker. All data you input—including text descriptions, quantities, and asset images—is saved entirely locally on your device using a secure SQLite database. We do not transmit your database to any remote servers.</p>
+                  </section>
+
+                  <section>
+                    <h2>2. Zero Data Collection</h2>
+                    <p>We absolutely do not collect, harvest, or transmit your personal information, telemetry, or inventory data. Your collection remains 100% private and under your absolute control. We do not use third-party analytics trackers.</p>
+                  </section>
+
+                  <section>
+                    <h2>3. Device Permissions Explained</h2>
+                    <p>To provide core features, the app requests specific permissions:</p>
+                    <ul>
+                      <li><strong>Camera:</strong> Exclusively used to scan barcodes/QR codes and to capture photos of your assets. Photos are never uploaded.</li>
+                      <li><strong>Storage/Photos:</strong> Used to save item images to your local directory and to export your database backups (CSV/PDF) to your device.</li>
+                    </ul>
+                  </section>
+
+                  <section>
+                    <h2>4. User Data Control</h2>
+                    <p>Because your data lives on your device, you have complete control over it. You can permanently erase all inventory data at any time by simply uninstalling the application or clearing the app data through your device settings.</p>
+                  </section>
+
+                  <section>
+                    <h2>5. Contact Us</h2>
+                    <p>If you have any questions or concerns regarding this policy, please reach out to our legal and support team at:</p>
+                    <div class="mt-5 rounded-2xl border border-slate-200 bg-slate-50 p-5">
+                      <p><strong>Lumina Logic Studio</strong></p>
+                      <p>Email: <a href="mailto:luminalogicstudio@proton.me">luminalogicstudio@proton.me</a></p>
+                      <p>Website: <a href="https://luminalogictech.my.id/">https://luminalogictech.my.id/</a></p>
+                    </div>
+                  </section>
+                </div>
+              ) : isDailyPlanner ? (
                 <div class="privacy-document">
                   <section>
                     <h2>Privacy Policy for Daily Planner</h2>
@@ -381,11 +423,19 @@ const coveredFeatures = [
     color: #475569;
   }
 
-  .privacy-document :global(ol) {
+  .privacy-document :global(ol),
+  .privacy-document :global(ul) {
     margin-top: 1rem;
     padding-left: 1.4rem;
-    list-style: decimal;
     color: #475569;
+  }
+
+  .privacy-document :global(ol) {
+    list-style: decimal;
+  }
+
+  .privacy-document :global(ul) {
+    list-style: disc;
   }
 
   .privacy-document :global(li + li) {
