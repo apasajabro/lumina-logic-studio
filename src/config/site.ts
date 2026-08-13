@@ -1,4 +1,4 @@
-const fallbackSiteUrl = 'https://example.com';
+const fallbackSiteUrl = 'https://luminalogictech.my.id';
 
 export const site = {
   url: import.meta.env.PUBLIC_SITE_URL || fallbackSiteUrl,

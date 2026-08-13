@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '@/layouts/BaseLayout.astro';
+import AssetVaultPrivacyPolicy from '@/components/privacy/AssetVaultPrivacyPolicy.astro';
 import { getPrivacyPolicyBySlug, privacyPolicies } from '@/data/privacy-policies';
 
 export function getStaticPaths() {
@@ -215,61 +216,7 @@ const coveredFeatures = [
                   </section>
                 </div>
               ) : isAssetVault ? (
-                <div class="privacy-document">
-                  <section>
-                    <h2>Privacy Policy for Asset Vault</h2>
-                    <p><strong>Effective Date:</strong> August 9, 2026</p>
-                    <p>Welcome to Asset Vault. We respect your privacy and are committed to protecting it. This Privacy Policy explains our practices regarding your data when you use our mobile application.</p>
-                  </section>
-
-                  <section>
-                    <h2>1. Local Data Storage</h2>
-                    <p>Asset Vault is designed as an offline-first application. All data you create, including inventory text, quantities, and images, is stored locally on your device's internal storage. We do not transmit, sync, or back up your data to our servers or any third-party cloud services.</p>
-                  </section>
-
-                  <section>
-                    <h2>2. Information We Do Not Collect</h2>
-                    <p>We do not collect, harvest, or transmit any personal information, usage analytics, telemetry, or inventory data. Since we do not operate servers to store your data, we have no access to the items you track.</p>
-                  </section>
-
-                  <section>
-                    <h2>3. Device Permissions</h2>
-                    <p>To provide core functionalities, the app requests the following permissions on your device:</p>
-                    <ul>
-                      <li><strong>Camera:</strong> Required exclusively to capture photos of your assets or scan barcodes/QR codes locally.</li>
-                      <li><strong>Storage/Media:</strong> Required to save captured asset images and to generate or read backup files (e.g., CSV, PDF or database files) directly on your device.</li>
-                    </ul>
-                  </section>
-
-                  <section>
-                    <h2>4. Data Security</h2>
-                    <p>Your data's security relies on your device's operating system. We utilize standard local database encryption mechanisms provided by the OS. However, please ensure your device is protected with a PIN, password, or biometrics to prevent unauthorized physical access to your inventory data.</p>
-                  </section>
-
-                  <section>
-                    <h2>5. Data Retention & Deletion</h2>
-                    <p>Your data remains on your device for as long as the application is installed. You retain full control over your data. You can permanently delete all your inventory records at any time by clearing the application data in your device settings or by uninstalling the application.</p>
-                  </section>
-
-                  <section>
-                    <h2>6. Children's Privacy</h2>
-                    <p>Our application does not address anyone under the age of 13. We do not knowingly collect or store personally identifiable information from children under 13.</p>
-                  </section>
-
-                  <section>
-                    <h2>7. Contact Us</h2>
-                    <p>If you have any questions, suggestions, or concerns regarding this Privacy Policy, please contact us at:</p>
-                    <div class="mt-5 rounded-2xl border border-slate-200 bg-slate-50 p-5">
-                      <p><strong>Lumina Logic Studio</strong></p>
-                      <p>Email: <a href="mailto:luminalogicstudio@proton.me">luminalogicstudio@proton.me</a></p>
-                      <p>Website: <a href="https://luminalogictech.my.id/">https://luminalogictech.my.id/</a></p>
-                    </div>
-                  </section>
-
-                  <section>
-                    <p class="text-center italic">By using Asset Vault, you acknowledge and agree to this Privacy Policy.</p>
-                  </section>
-                </div>
+                <AssetVaultPrivacyPolicy />
               ) : isDailyPlanner ? (
                 <div class="privacy-document">
                   <section>

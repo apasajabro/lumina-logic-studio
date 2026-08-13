@@ -87,16 +87,16 @@ export const privacyPolicies: AppPrivacyPolicy[] = [
   {
     slug: 'asset-vault',
     appName: 'Asset Vault',
-    developerName: 'Lumina Logic Studio',
+    developerName: 'Lumina Logic Studio (PT Lumina Logic Studio)',
     companyWebsite: 'https://luminalogictech.my.id',
     contactEmail: 'luminalogicstudio@proton.me',
-    effectiveDate: '2026-08-09',
-    lastUpdated: '2026-08-09',
+    effectiveDate: '2026-08-13',
+    lastUpdated: '2026-08-13',
     country: 'Indonesia',
     shortDescription:
-      'Privacy policy for Asset Vault, an offline-first inventory tracker app published by Lumina Logic Studio.',
+      'Privacy policy for Asset Vault, an offline-first inventory management application developed and published by Lumina Logic Studio.',
     dataCollectionSummary:
-      'Asset Vault works entirely offline. All data you input is saved entirely locally on your device and is not transmitted to remote servers.',
+      'Asset Vault is offline-first. Core inventory features work locally on your device. A network connection may be used when you load an image URL entered by you or open an external website, email, sharing target, or store link.',
     features: {
       localStorage: true,
       ads: false,
