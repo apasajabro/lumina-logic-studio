@@ -28,17 +28,17 @@ export type AppPrivacyPolicy = {
 export const privacyPolicies: AppPrivacyPolicy[] = [
   {
     slug: 'daily-planner',
-    appName: 'Daily Planner',
+    appName: 'AulaPlan',
     developerName: 'Lumina Logic Studio',
     companyWebsite: 'https://luminalogictech.my.id',
     contactEmail: 'luminalogicstudio@proton.me',
-    effectiveDate: '2026-06-29',
-    lastUpdated: '2026-06-29',
+    effectiveDate: '2026-08-23',
+    lastUpdated: '2026-08-23',
     country: 'Indonesia',
     shortDescription:
-      'Privacy policy for Daily Planner, an offline daily planning app published by Lumina Logic Studio.',
+      'Privacy policy for AulaPlan, an offline student planner developed by Lumina Logic Studio.',
     dataCollectionSummary:
-      'Daily Planner works offline. Planner data is stored locally on the user’s device and is not transmitted to Lumina Logic Studio or third-party servers.',
+      'AulaPlan works offline. Planner data is stored locally on the user’s device and is not transmitted to Lumina Logic Studio or third-party servers.',
     features: {
       localStorage: true,
       ads: false,
