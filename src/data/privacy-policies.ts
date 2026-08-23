@@ -147,7 +147,7 @@ export const privacyPolicies: AppPrivacyPolicy[] = [
     appName: 'MathIQ: Math & Logic Quiz',
     developerName: 'Lumina Logic',
     companyWebsite: 'https://luminalogictech.my.id/',
-    contactEmail: 'support@luminalogic.com',
+    contactEmail: 'luminalogicstudio@proton.me',
     effectiveDate: '2026-08-01',
     lastUpdated: '2026-08-01',
     country: 'Indonesia',
