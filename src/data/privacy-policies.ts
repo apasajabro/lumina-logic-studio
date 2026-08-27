@@ -125,7 +125,7 @@ export const privacyPolicies: AppPrivacyPolicy[] = [
     shortDescription:
       'Privacy policy for Recipe Vault: Recipe Manager, an offline-first recipe manager app published by Lumina Logic Studio.',
     dataCollectionSummary:
-      'Recipe Vault is designed with your privacy in mind. All your recipe data, favorites, and settings are stored strictly locally on your device.',
+      'Recipe Vault stores recipes, favorites, settings, and image URI references locally on your device. It does not provide accounts, cloud synchronization, or analytics and advertising services.',
     features: {
       localStorage: true,
       ads: false,
