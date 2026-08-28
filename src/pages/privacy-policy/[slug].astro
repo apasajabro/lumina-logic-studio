@@ -4,6 +4,7 @@ import AssetVaultPrivacyPolicy from '@/components/privacy/AssetVaultPrivacyPolic
 import MathIQPrivacyPolicy from '@/components/privacy/MathIQPrivacyPolicy.astro';
 import RecipeVaultPrivacyPolicy from '@/components/privacy/RecipeVaultPrivacyPolicy.astro';
 import LuminaRoutinePrivacyPolicy from '@/components/privacy/LuminaRoutinePrivacyPolicy.astro';
+import AulaPlanPrivacyPolicy from '@/components/privacy/AulaPlanPrivacyPolicy.astro';
 import { getPrivacyPolicyBySlug, privacyPolicies } from '@/data/privacy-policies';
 
 export function getStaticPaths() {
@@ -144,117 +145,9 @@ const coveredFeatures = [
               ) : isAssetVault ? (
                 <AssetVaultPrivacyPolicy />
               ) : isDailyPlanner ? (
-                <LuminaRoutinePrivacyPolicy />
+                <AulaPlanPrivacyPolicy />
               ) : isSimpleHabitTracker ? (
-                <div class="privacy-document">
-                  <section>
-                    <h2>Privacy Policy for Simple Habit Tracker</h2>
-                    <p><strong>Effective Date:</strong> July 1, 2026</p>
-                    <p>Simple Habit Tracker is developed and published by Lumina Logic Studio.</p>
-                    <p>This Privacy Policy explains how Simple Habit Tracker handles user data.</p>
-                  </section>
-
-                  <section>
-                    <h2>Overview</h2>
-                    <p>Simple Habit Tracker is an offline habit tracking app. The app allows users to create habits, add descriptions, choose categories, set frequency, set daily targets, mark habits as completed for the day, archive habits, restore habits, delete habits, and view simple local progress statistics.</p>
-                    <p>Simple Habit Tracker is designed to work without login, cloud sync, advertising SDKs, analytics SDKs, Firebase, or backend servers.</p>
-                  </section>
-
-                  <section>
-                    <h2>Data Collection</h2>
-                    <p>Simple Habit Tracker does not collect personal data from users.</p>
-                    <p>The app does not transmit habit data to Lumina Logic Studio or to any third-party server.</p>
-                  </section>
-
-                  <section>
-                    <h2>Local Data Storage</h2>
-                    <p>Habit data created inside the app is stored locally on the user’s device using an offline database.</p>
-                    <p>This may include:</p>
-                    <ol>
-                      <li>Habit name</li>
-                      <li>Habit description</li>
-                      <li>Habit category</li>
-                      <li>Habit frequency</li>
-                      <li>Daily target</li>
-                      <li>Habit color preference</li>
-                      <li>Daily completion progress</li>
-                      <li>Archive status</li>
-                      <li>Created date</li>
-                      <li>Updated date</li>
-                    </ol>
-                    <p>This information remains on the user’s device.</p>
-                  </section>
-
-                  <section>
-                    <h2>Data Sharing</h2>
-                    <p>Simple Habit Tracker does not sell, rent, trade, or share user habit data with third parties.</p>
-                  </section>
-
-                  <section>
-                    <h2>Login and Account</h2>
-                    <p>Simple Habit Tracker does not require account registration or login.</p>
-                  </section>
-
-                  <section>
-                    <h2>Advertising and Analytics</h2>
-                    <p>Simple Habit Tracker does not use advertising SDKs.</p>
-                    <p>Simple Habit Tracker does not use analytics SDKs.</p>
-                    <p>Simple Habit Tracker does not display ads.</p>
-                  </section>
-
-                  <section>
-                    <h2>Purchases and Payments</h2>
-                    <p>Simple Habit Tracker does not include in-app purchases, subscriptions, or payment features.</p>
-                  </section>
-
-                  <section>
-                    <h2>Cloud Sync and Backend Servers</h2>
-                    <p>Simple Habit Tracker does not use cloud sync or backend servers.</p>
-                    <p>Habit data is not uploaded to Lumina Logic Studio.</p>
-                  </section>
-
-                  <section>
-                    <h2>Permissions</h2>
-                    <p>Simple Habit Tracker does not request sensitive permissions such as:</p>
-                    <ol>
-                      <li>Location</li>
-                      <li>Camera</li>
-                      <li>Microphone</li>
-                      <li>Contacts</li>
-                      <li>Calendar</li>
-                      <li>Photos or media library</li>
-                      <li>Broad file storage access</li>
-                    </ol>
-                  </section>
-
-                  <section>
-                    <h2>Data Deletion</h2>
-                    <p>Users can manage habit data directly inside the app.</p>
-                    <p>Users can delete habits directly inside the app. When a habit is deleted, the habit and its local progress records are removed from the app database on the user’s device.</p>
-                    <p>Users can also remove local app data by uninstalling the app or clearing the app data from their device settings.</p>
-                    <p>Because Simple Habit Tracker does not collect or store user data on Lumina Logic Studio servers, there is no server-side account data to delete.</p>
-                  </section>
-
-                  <section>
-                    <h2>Children’s Privacy</h2>
-                    <p>Simple Habit Tracker is a general productivity and habit tracking app and does not knowingly collect personal data from children.</p>
-                  </section>
-
-                  <section>
-                    <h2>Changes to This Privacy Policy</h2>
-                    <p>Lumina Logic Studio may update this Privacy Policy when necessary. Any updates will be posted on this page.</p>
-                  </section>
-
-                  <section>
-                    <h2>Contact</h2>
-                    <p>For privacy questions or support, contact:</p>
-                    <div class="mt-5 rounded-2xl border border-slate-200 bg-slate-50 p-5">
-                      <p><strong>Lumina Logic Studio</strong></p>
-                      <p>Email: <a href="mailto:luminalogicstudio@proton.me">luminalogicstudio@proton.me</a></p>
-                      <p>Website: <a href="https://luminalogictech.my.id/">https://luminalogictech.my.id/</a></p>
-                    </div>
-                  </section>
-                </div>
+                <LuminaRoutinePrivacyPolicy />
               ) : (
                 <div class="privacy-document">
                   <section>
