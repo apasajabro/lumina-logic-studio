@@ -5,6 +5,7 @@ import MathIQPrivacyPolicy from '@/components/privacy/MathIQPrivacyPolicy.astro'
 import RecipeVaultPrivacyPolicy from '@/components/privacy/RecipeVaultPrivacyPolicy.astro';
 import LuminaRoutinePrivacyPolicy from '@/components/privacy/LuminaRoutinePrivacyPolicy.astro';
 import AulaPlanPrivacyPolicy from '@/components/privacy/AulaPlanPrivacyPolicy.astro';
+import EquationGridPrivacyPolicy from '@/components/privacy/EquationGridPrivacyPolicy.astro';
 import { getPrivacyPolicyBySlug, privacyPolicies } from '@/data/privacy-policies';
 
 export function getStaticPaths() {
@@ -23,6 +24,7 @@ const isSimpleHabitTracker = policy.slug === 'simple-habit-tracker';
 const isAssetVault = policy.slug === 'asset-vault';
 const isRecipeVault = policy.slug === 'recipe-vault';
 const isMathIQ = policy.slug === 'mathiq';
+const isEquationGrid = policy.slug === 'equation-grid';
 
 const title = `${policy.appName} — Privacy Policy`;
 const description = policy.shortDescription;
@@ -140,6 +142,8 @@ const coveredFeatures = [
             <article class="rounded-[2rem] border border-white/15 bg-white p-6 text-slate-800 shadow-soft sm:p-10">
               {isMathIQ ? (
                 <MathIQPrivacyPolicy />
+              ) : isEquationGrid ? (
+                <EquationGridPrivacyPolicy />
               ) : isRecipeVault ? (
                 <RecipeVaultPrivacyPolicy />
               ) : isAssetVault ? (

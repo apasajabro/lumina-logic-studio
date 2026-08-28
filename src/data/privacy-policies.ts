@@ -172,6 +172,35 @@ export const privacyPolicies: AppPrivacyPolicy[] = [
   },
 
   {
+    slug: 'equation-grid',
+    appName: 'Equation Grid',
+    developerName: 'Lumina Logic Studio',
+    companyWebsite: 'https://luminalogictech.my.id/',
+    contactEmail: 'luminalogicstudio@proton.me',
+    effectiveDate: '2026-08-29',
+    lastUpdated: '2026-08-29',
+    country: 'Indonesia',
+    shortDescription:
+      'Privacy policy for Equation Grid, an offline mathematical crossword game.',
+    dataCollectionSummary:
+      'Equation Grid stores game progress and preferences locally on your device and does not require an account or online data services.',
+    features: {
+      localStorage: true,
+      ads: false,
+      analytics: false,
+      crashReporting: false,
+      inAppPurchases: false,
+      subscriptions: false,
+      notifications: false,
+      location: false,
+      camera: false,
+      mediaFiles: false,
+      accountSystem: false,
+      cloudSync: false
+    }
+  },
+
+  {
     slug: 'general-mobile-app-privacy-policy',
     appName: 'General Mobile Application Privacy Policy',
     developerName: 'PT Lumina Logic Studio',
