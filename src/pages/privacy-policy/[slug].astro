@@ -3,6 +3,7 @@ import BaseLayout from '@/layouts/BaseLayout.astro';
 import AssetVaultPrivacyPolicy from '@/components/privacy/AssetVaultPrivacyPolicy.astro';
 import MathIQPrivacyPolicy from '@/components/privacy/MathIQPrivacyPolicy.astro';
 import RecipeVaultPrivacyPolicy from '@/components/privacy/RecipeVaultPrivacyPolicy.astro';
+import LuminaRoutinePrivacyPolicy from '@/components/privacy/LuminaRoutinePrivacyPolicy.astro';
 import { getPrivacyPolicyBySlug, privacyPolicies } from '@/data/privacy-policies';
 
 export function getStaticPaths() {
@@ -143,80 +144,7 @@ const coveredFeatures = [
               ) : isAssetVault ? (
                 <AssetVaultPrivacyPolicy />
               ) : isDailyPlanner ? (
-                <div class="privacy-document">
-                  <section>
-                    <h2>Privacy Policy for AulaPlan</h2>
-                    <p><strong>Effective Date:</strong> August 23, 2026</p>
-                    <p>AulaPlan is developed by <strong>Lumina Logic Studio</strong>.</p>
-                    <p>This Privacy Policy explains how AulaPlan handles information when you use the application.</p>
-                  </section>
-
-                  <section>
-                    <h2>Privacy at a Glance</h2>
-                    <p>AulaPlan is an offline student planner. It does not require an account, does not use cloud synchronization, and does not send your planner data to Lumina Logic Studio or third-party servers.</p>
-                  </section>
-
-                  <section>
-                    <h2>Information Stored on Your Device</h2>
-                    <p>AulaPlan stores the information you choose to enter into the app locally on your device. This may include:</p>
-                    <ol>
-                      <li>Task titles and descriptions</li>
-                      <li>Categories and priorities</li>
-                      <li>Due dates and completion status</li>
-                      <li>Course or subject names</li>
-                      <li>Topics and locations</li>
-                      <li>Estimated study duration</li>
-                      <li>Target scores</li>
-                      <li>Study-session details</li>
-                    </ol>
-                    <p>This information is used only to provide the planner features, including creating, editing, searching, filtering, completing, and displaying your tasks and local progress.</p>
-                  </section>
-
-                  <section>
-                    <h2>Information We Collect or Share</h2>
-                    <p>Lumina Logic Studio does not collect, sell, rent, or share your planner data. AulaPlan does not transmit planner data to a company server or third-party service.</p>
-                    <p>AulaPlan does not include user accounts, login, cloud sync, advertising SDKs, analytics, crash-reporting services, Firebase services, or a backend server.</p>
-                    <p>Because AulaPlan does not collect or transmit the data stored in the planner, no user data types are collected or shared by AulaPlan for Google Play Data safety purposes.</p>
-                  </section>
-
-                  <section>
-                    <h2>Permissions and External Links</h2>
-                    <p>AulaPlan does not request access to your location, camera, contacts, microphone, or broad file storage.</p>
-                    <p>The app may open this Privacy Policy in your device’s web browser when you choose the web policy option. Opening that link does not send your planner data to the website.</p>
-                  </section>
-
-                  <section>
-                    <h2>Your Choices and Deletion</h2>
-                    <p>You can create, edit, complete, and delete tasks directly inside AulaPlan. When you delete a task, it is removed from the local AulaPlan database on your device.</p>
-                    <p>AulaPlan does not maintain an online account or server-side copy of your planner data. As a result, there is no remote account data to request for deletion.</p>
-                    <p>You can also remove locally stored app data using your device’s Android settings or by uninstalling the app, subject to the behavior of your device and operating system.</p>
-                  </section>
-
-                  <section>
-                    <h2>Children’s Privacy</h2>
-                    <p>AulaPlan is not designed to collect personal information from children. The app does not require registration and does not transmit planner data. Parents or guardians can contact us if they have questions about the app’s privacy practices.</p>
-                  </section>
-
-                  <section>
-                    <h2>Data Security</h2>
-                    <p>AulaPlan is designed to keep planner information on your device and minimize data exposure. No online transmission of planner data is performed by the app.</p>
-                    <p>You are responsible for protecting access to your device and keeping your device’s operating system secure.</p>
-                  </section>
-
-                  <section>
-                    <h2>Changes to This Privacy Policy</h2>
-                    <p>We may update this Privacy Policy when AulaPlan’s features or data practices change.</p>
-                    <p>The updated policy will be posted on this page with a revised effective date. The in-app Privacy Policy may also be updated to remain consistent with the published version.</p>
-                  </section>
-
-                  <section>
-                    <h2>Contact</h2>
-                    <p>For support or privacy questions, contact:</p>
-                    <p><strong>Lumina Logic Studio</strong></p>
-                    <p>Email: <a href="mailto:luminalogicstudio@proton.me">luminalogicstudio@proton.me</a></p>
-                    <p>Website: <a href="https://luminalogictech.my.id/">https://luminalogictech.my.id/</a></p>
-                  </section>
-                </div>
+                <LuminaRoutinePrivacyPolicy />
               ) : isSimpleHabitTracker ? (
                 <div class="privacy-document">
                   <section>
