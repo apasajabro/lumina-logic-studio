@@ -201,6 +201,35 @@ export const privacyPolicies: AppPrivacyPolicy[] = [
   },
 
   {
+    slug: 'number-path',
+    appName: 'Number Path: Math Adventure',
+    developerName: 'Lumina Logic Studio',
+    companyWebsite: 'https://luminalogictech.my.id/',
+    contactEmail: 'luminalogicstudio@proton.me',
+    effectiveDate: '2026-08-29',
+    lastUpdated: '2026-08-29',
+    country: 'Indonesia',
+    shortDescription:
+      'Privacy policy for Number Path: Math Adventure, an offline mathematical game.',
+    dataCollectionSummary:
+      'Number Path stores game progress, best times, and preferences locally on your device and does not require an account or online account service.',
+    features: {
+      localStorage: true,
+      ads: false,
+      analytics: false,
+      crashReporting: false,
+      inAppPurchases: false,
+      subscriptions: false,
+      notifications: false,
+      location: false,
+      camera: false,
+      mediaFiles: false,
+      accountSystem: false,
+      cloudSync: false
+    }
+  },
+
+  {
     slug: 'general-mobile-app-privacy-policy',
     appName: 'General Mobile Application Privacy Policy',
     developerName: 'PT Lumina Logic Studio',

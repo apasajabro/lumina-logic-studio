@@ -6,6 +6,7 @@ import RecipeVaultPrivacyPolicy from '@/components/privacy/RecipeVaultPrivacyPol
 import LuminaRoutinePrivacyPolicy from '@/components/privacy/LuminaRoutinePrivacyPolicy.astro';
 import AulaPlanPrivacyPolicy from '@/components/privacy/AulaPlanPrivacyPolicy.astro';
 import EquationGridPrivacyPolicy from '@/components/privacy/EquationGridPrivacyPolicy.astro';
+import NumberPathPrivacyPolicy from '@/components/privacy/NumberPathPrivacyPolicy.astro';
 import { getPrivacyPolicyBySlug, privacyPolicies } from '@/data/privacy-policies';
 
 export function getStaticPaths() {
@@ -25,6 +26,7 @@ const isAssetVault = policy.slug === 'asset-vault';
 const isRecipeVault = policy.slug === 'recipe-vault';
 const isMathIQ = policy.slug === 'mathiq';
 const isEquationGrid = policy.slug === 'equation-grid';
+const isNumberPath = policy.slug === 'number-path';
 
 const title = `${policy.appName} — Privacy Policy`;
 const description = policy.shortDescription;
@@ -144,6 +146,8 @@ const coveredFeatures = [
                 <MathIQPrivacyPolicy />
               ) : isEquationGrid ? (
                 <EquationGridPrivacyPolicy />
+              ) : isNumberPath ? (
+                <NumberPathPrivacyPolicy />
               ) : isRecipeVault ? (
                 <RecipeVaultPrivacyPolicy />
               ) : isAssetVault ? (
