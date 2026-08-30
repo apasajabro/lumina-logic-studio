@@ -230,6 +230,35 @@ export const privacyPolicies: AppPrivacyPolicy[] = [
   },
 
   {
+    slug: 'lumina-feed-calculator',
+    appName: 'Lumina Feed Calculator',
+    developerName: 'Lumina Logic Studio',
+    companyWebsite: 'https://luminalogictech.my.id/',
+    contactEmail: 'luminalogicstudio@proton.me',
+    effectiveDate: '2026-08-31',
+    lastUpdated: '2026-08-31',
+    country: 'Indonesia',
+    shortDescription:
+      'Privacy policy for Lumina Feed Calculator, an offline-first livestock feed calculation application.',
+    dataCollectionSummary:
+      'Lumina Feed Calculator stores livestock records, photos, formulas, schedules, calculations, and preferences locally on your device. It does not require an account or automatically upload this information.',
+    features: {
+      localStorage: true,
+      ads: false,
+      analytics: false,
+      crashReporting: false,
+      inAppPurchases: false,
+      subscriptions: false,
+      notifications: true,
+      location: false,
+      camera: true,
+      mediaFiles: true,
+      accountSystem: false,
+      cloudSync: false
+    }
+  },
+
+  {
     slug: 'general-mobile-app-privacy-policy',
     appName: 'General Mobile Application Privacy Policy',
     developerName: 'PT Lumina Logic Studio',
